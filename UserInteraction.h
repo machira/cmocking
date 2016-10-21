@@ -4,6 +4,7 @@
 
 #ifndef CMOCKING_USERINTERACTION_H
 #define CMOCKING_USERINTERACTION_H
+
 #include <sstream>
 #include "UserInteraction.h"
 #include <iostream>
@@ -18,6 +19,10 @@ public:
     string getUserString();
 
     void tellUserSomething(string);
+
+    void interactWithUser();
+
+    int product(int x, int y);
 
 private:
     basic_istream<char> &input;
